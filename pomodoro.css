@@ -1,0 +1,275 @@
+
+/* CSS properties for Mobile Phones */ 
+
+body {
+    background-color: #212121;
+    color: #C0C0C0;
+}
+
+#title {
+    font-size: 10vw;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1.5vh;
+}
+
+#image, 
+#pomo-info{
+    visibility: hidden; /* hides element  */ 
+    display: none;      /* to remove element from the layout structure*/
+}
+
+.commands {
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+.controlButtons {
+    list-style-type: none; 
+}
+
+/* COMMAND BUTTONS PROPERTIES */
+ul.commands li {              
+    display: block;
+    text-align: center;    /* vertical-align: middle; tdo ???*/
+    font-size: 8vw;
+    margin: 2vh;               /* margin above and below*/
+    border: 4px solid #4d4d4d; /* */
+    background-color: #3d3d3d;
+    border-radius: 8vw;;
+    padding: 4vw 4vw;
+    min-width: 80%;
+    
+}
+ul {              
+    margin: 0;       /* removing indent from unorder lists*/ 
+    padding: 0;
+    text-align: center;
+}
+/*  Hover effect for buttons*/
+ul.commands li:hover, #pomo-info:hover, #wiki-pomo:hover {
+    background-color: #4D4D4D;
+}
+/*  timer*/
+#timer {
+    font-size: 38vw;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+/*  Control Buttons*/ 
+ul.controlButtons li {
+    display: inline-block;
+    min-width: 30%;
+    font-size: 12vw;
+    text-align: center;
+}
+ul.controlButtons {
+    margin:0;
+}
+ul.controlButtons li:hover {
+    color: #FFFFFF;
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+}
+/* Modal for pomodoro information*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(255,255,255, 0.4);
+    font-size: 16px;
+    
+}
+.modal-content {
+    background-color: black;       /* TODO */
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid black;
+    width: 80%;
+    border-radius: 50px;
+    background-color: #212121;
+    color: #C0C0C0;
+    
+}
+/* Wiki Link to pomodoro technique im modal*/
+#wiki-pomo {
+        display: block;
+        font-family: "Arial Black", Gadget, sans-serif;
+        color: white;
+        background-color: #3D3D3D;
+        border-radius: 16px;
+        border: 4px solid #4D4D4D;
+        padding: 5px;
+        font-size: 12px;
+        margin: 0 auto;
+        text-decoration: none;
+        text-align: center;
+        width: 70%;
+        display: block;
+
+}
+
+/* Close button*/
+#close-btn{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#close-btn:hover,
+#close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS properties for Tablets */ 
+@media only screen and (min-width: 570px) {
+    /* command Buttons*/ 
+    ul.commands li {              
+        display: inline-block;
+        min-width: 32%;
+        max-width: 32%;
+        font-size: 4vw;
+        border-radius: 5vw;
+        margin: 1.5vw;
+        /* padding: 4vw;  */
+
+    }
+
+    /* Image */
+    #image {
+        visibility: visible; 
+        display: block;
+        margin: 0 auto;
+        width: 70vw;
+    
+    }
+        /*  timer */
+    #timer {
+        font-size: 28vw;
+        margin: 0;
+    }
+        /* Control Buttons */ 
+    ul.controlButtons li {
+        font-size: 11vw;  
+    }
+}
+
+/* CSS properties for Desktops */
+
+@media only screen and (min-width: 801px) {
+    
+    #title {
+        text-align: left;
+        margin: 1.5vh;
+        font-size: 5vw;
+        display: inline;
+        position: relative;
+        top: 15px;
+    }
+    #pomo-info {
+        display: inline-block;
+        visibility: visible;
+        font-family: "Arial Black", Gadget, sans-serif;
+        color: white;
+        background-color: #3D3D3D;
+        border-radius: 16px;
+        border: 3px solid #4D4D4D;
+        padding: 0.5vw;
+        position: relative;
+        left: 20vw;
+        top: 7px;
+        font-size: 1.5vw;
+    }
+    /* command Buttons*/ 
+    ul.commands li {              
+        display: inline-block;
+        min-width: 20%;
+        font-size: 2.5vw;
+        border-radius: 20px;
+        margin: 0.5vw;
+        padding: 1vw;
+        margin-top: 50px;  /* HERE ADJUST MARGIN TOP*/
+
+    }
+    #image {
+        margin: 40px auto;
+        width: 50vw;
+            
+    }
+    /*  timer */
+    #timer {
+        font-size: 20vw;
+    
+    }
+    /*  Properties for Control Buttons*/
+    ul.controlButtons li {
+        min-width: 20%;
+        font-size: 8vw;
+    }
+    .modal {
+        font-size: 24px;
+        
+    }
+    .modal-content {
+        max-width: 700px;
+        margin: 100px auto;
+    }
+    #wiki-pomo {
+        font-size: 16px;
+        padding: 5px 15px;
+        width: 540px;
+    }
+
+}
+@media only screen and (min-width: 1001px) {
+    #title {
+        font-size: 50px;
+        text-align: center;
+    }
+     /* command Buttons*/ 
+    ul.commands li {              
+        font-size: 25.2px;
+        margin: 50px 6px 6px;
+        padding: 10px;
+    }    
+    ul.commands {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    #image {
+        width: 500px;
+    }
+    #timer {
+        font-size: 200px;
+    }
+    /*  Properties for Control Buttons*/
+    ul.controlButtons li {
+        font-size: 75px;
+        min-width: 200px;
+    }
+    /* pomo info button */ 
+    #pomo-info {
+        font-size: 15px;
+        padding: 5px;
+        float: right;
+        left:-55px;
+        top: 32px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}  
