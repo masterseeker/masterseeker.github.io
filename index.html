@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD's Pomodoro Timer</title>
+    <link rel="stylesheet" href="pomodoro.css">  <!-- how to link to external style sheet-->
+</head>
+
+<body>
+    <h2 id= "title">JD's Pomodoro Timer</h2>
+    <button id= "pomo-info" >What is the Pomodoro Technique?</button>
+    <ul class = "commands">
+        <li id="pomoButton">Pomodoro</li>
+        <li id="shortButton">Short Break</li>
+        <li id="longButton">Long Break</li>
+        <li id="loopButton">Loop</li>
+    </ul>
+
+    <img id ="image" src="images/BlackArsenalCannon.jpg" alt="Arsenal Cannon image edit">
+    <h3 id = "timer">25:00</h3>
+    
+    <ul class= controlButtons>
+        <li id= "reset">&#x21bb;</li>
+        <li id= "start">&#9658;</li>
+        <li id= "pause">&#10074;&#10074;</li>
+
+    </ul>
+
+    <!-- Modal -> pomo infomation button -->
+    <div id = "pomo-modal" class="modal">
+        <div class = "modal-content">
+            <span id = "close-btn">&times;</span>
+            <h2>What is a Pomodoro Technique</h2>
+            <hr>
+            <h3> Pomodoro Technique</h3>
+            <ol>
+                <li>Choose a task you'd like to get done.</li>
+                <li>Set the Pomodoro for 25 minutes.</li>
+                <li>Work on task until the Pomodoro Timer rings.</li>
+                <li>When the timer rings, put a checkmark on paper.</li>
+                <li>Take a Short break.</li>
+                <li>Every 4 pomodoro's, take a longer break.</li>
+            </ol>
+            <br>
+            <a target="_blank" id="wiki-pomo" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">
+                Wiki Link: Detailed Explaination of Pomodoro Technique
+            </a>
+            <br><br>
+
+        </div>
+    </div>
+     <!-- How to link to a javascript file-->
+    <script type="text/javascript" src="pomodoro.js"></script> 
+</html>
+
+<!--
+TODO in the Future 
+
+1. Try to optimize to make timer less taxing on browser
+2. Improve media aqueries to make website more responsive
+3. Improve the aesthetic of the website
+4. ?? ADD Some functionality or feature
+5. Add an effect to when the timer goes off
+-->
